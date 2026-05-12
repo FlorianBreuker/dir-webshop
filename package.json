@@ -5,15 +5,7 @@
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
-    "preview": "vite preview",
-    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-    "test": "vitest",
-    "test_run": "vitest run",
-    "lint": "eslint .",
-    "format": "prettier --write --plugin prettier-plugin-svelte ./",
-    "format_check": "prettier --check --plugin prettier-plugin-svelte ./",
-    "postinstall": "patch-package"
+    "preview": "vite preview"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "^6.0.0",

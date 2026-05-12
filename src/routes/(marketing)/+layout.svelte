@@ -80,7 +80,7 @@
   </nav>
   <nav>
     <h6 class="footer-title">Rechtliches</h6>
-    <a href="/impress" class="link link-hover">Impressum</a>
+    <a href="/legal" class="link link-hover">Impressum</a>
     <a href="/license" class="link link-hover">Lizenz</a>
     <a href="/privacy" class="link link-hover">Datenschutzerklärung</a>
   </nav>

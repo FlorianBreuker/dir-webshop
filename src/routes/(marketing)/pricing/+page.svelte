@@ -97,7 +97,7 @@
   <div class="w-full my-8">
     <PricingModule callToAction="Get Started" highlightedPlanId="free" />
 
-    <svg style="display:none" version="2.0">
+    <svg style="display:none">
       <defs>
         <symbol
           id="checkcircle"
@@ -114,7 +114,7 @@
       </defs>
     </svg>
 
-    <svg style="display:none" version="2.0">
+    <svg style="display:none">
       <defs>
         <symbol id="nocircle" viewBox="0 0 24 24" fill="currentColor">
           <path
@@ -124,18 +124,17 @@
       </defs>
     </svg>
 
-    <h1 class="text-2xl font-bold text-center mt-16">Plan Features</h1>
-    <h2 class="text-xl text-center text-slate-500 mt-1 pb-3">
-      Vergleiche unsere Pläne
-    </h2>
-
-    <div class="overflow-visible mx-auto max-w-xl mt-4">
+    <div class="overflow-visible mx-auto max-w-xl mt-16">
       <table class="table">
+        <caption class="mb-4">
+          <div class="text-2xl font-bold text-center text-base-content">Plan Features</div>
+          <div class="text-xl text-center text-slate-500 mt-1 pb-3">Vergleiche unsere Pläne</div>
+        </caption>
         <thead
           class="text-lg sticky top-0 bg-base-100 bg-opacity-50 z-10 backdrop-blur-sm"
         >
         <tr>
-          <th></th>
+          <td></td>
           <th class="text-center">Free</th>
           <th class="text-center">Pro</th>
           <th class="text-center">Studio</th>
@@ -145,7 +144,7 @@
         {#each planFeatures as feature}
           {#if feature.header}
             <tr class="bg-base-200 font-bold">
-              <td colspan="3">{feature.name} </td>
+              <td colspan="4">{feature.name} </td>
             </tr>
           {:else}
             <tr class="relative">

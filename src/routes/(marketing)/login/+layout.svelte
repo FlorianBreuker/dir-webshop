@@ -4,14 +4,6 @@
   }
 
   let { children }: Props = $props()
-  let isEurope = $state(false)
-  try {
-    isEurope = Intl.DateTimeFormat()
-      .resolvedOptions()
-      .timeZone.startsWith("Europe/")
-  } catch {
-    /* continue */
-  }
 </script>
 
 <div
@@ -19,8 +11,5 @@
 >
   <div class="flex flex-col w-64 lg:w-80">
     {@render children?.()}
-    <div class="mt-8 {isEurope ? 'block' : 'hidden'}">
-      🍪 Logging in uses Cookies 🍪
-    </div>
   </div>
 </div>

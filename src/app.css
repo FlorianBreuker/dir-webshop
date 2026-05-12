@@ -6,6 +6,10 @@
   themes: pastel --default;
 }
 
+@theme {
+  --font-display: "Oswald", sans-serif;
+}
+
 /*
   Tailwind CSS v4 Migration:
   The default border color has changed to `currentColor` in Tailwind CSS v4,

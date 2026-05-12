@@ -1,5 +1,11 @@
-<script>
+<script lang="ts">
+  import { WebsiteName } from "../../../config.ts"
 </script>
+
+<svelte:head>
+  <title>Barrierefreiheitserklärung</title>
+  <meta name="description" content="Barrierefreiheitserklärung - {WebsiteName}" />
+</svelte:head>
 
 <div class="min-h-[70vh] pb-8 pt-[5vh] container mx-auto max-w-2xl">
   <h1 class="text-3xl font-bold">Barrierefreiheitserklärung</h1>

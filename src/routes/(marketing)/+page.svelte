@@ -62,6 +62,7 @@
         <img
           src="https://images.unsplash.com/photo-1523698120758-030a38a90d16"
           class="max-w-sm rounded-lg shadow-2xl"
+          alt="Photo Gallery"
         />
         <div>
           <h1 class="text-5xl font-bold">Sichere Smart Galleries</h1>
@@ -78,6 +79,7 @@
         <img
           src="https://images.unsplash.com/photo-1522198734915-76c764a8454d"
           class="max-w-sm rounded-lg shadow-2xl"
+          alt="Webshop"
         />
         <div>
           <h1 class="text-5xl font-bold">Integrierter Webshop</h1>
@@ -94,6 +96,7 @@
         <img
           src="https://images.unsplash.com/photo-1594810205183-18a8b0ce6c13"
           class="max-w-sm rounded-lg shadow-2xl"
+          alt="European Union"
         />
         <div>
           <h1 class="text-5xl font-bold">Cloud Lösungen</h1>

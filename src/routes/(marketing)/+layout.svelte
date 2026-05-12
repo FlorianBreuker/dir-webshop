@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { WebsiteName } from "./../../config"
+  import { WebsiteName } from "../../config"
   import "../../app.css"
 
   interface Props {
@@ -55,6 +55,7 @@
       <a href="/legal" class="link link-hover">Impressum</a>
       <a href="/license" class="link link-hover">Lizenz</a>
       <a href="/privacy" class="link link-hover">Datenschutzerklärung</a>
+      <a href="/accessibility" class="link link-hover">Barrierefreiheitserklärung</a>
     </nav>
   </footer>
 

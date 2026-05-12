@@ -20,8 +20,8 @@
     </div>
     <div class="flex-none">
       <ul class="menu menu-horizontal px-1 hidden sm:flex font-bold text-lg">
-        <li class="md:mx-2"><a href="/pricing">Pricing</a></li>
-        <li class="md:mx-2"><a href="/about">About us</a></li>
+        <li class="md:mx-2"><a href="/pricing">Preise</a></li>
+        <li class="md:mx-2"><a href="/about">Über uns</a></li>
       </ul>
     </div>
   </div>
@@ -36,7 +36,7 @@
     <aside>
       <img class="w-20 h-20" src="/favicon.svg" alt="PhotoLoom GmbH Logo" />
       <p>
-        PhotoLoom GmbH
+        <b>PhotoLoom GmbH</b>
         <br />
         Skaliere gemeinsam mit uns!
       </p>

@@ -12,7 +12,7 @@
 <div class="navbar bg-base-100 container mx-auto">
   <div class="flex-1">
     <a class="btn btn-ghost normal-case text-xl" href="/">
-      <img class="w-8 h-8" src="/favicon.svg" alt="logo"/>
+      <img class="w-8 h-8" src="/favicon.svg" alt="PhotoLoom GmbH Logo"/>
       {WebsiteName}
     </a>
   </div>
@@ -33,7 +33,7 @@
 <div class="border-t max-w-[1000px] mx-auto"></div>
 <footer class="footer sm:footer-horizontal bg-base-200 text-base-content p-10">
   <aside>
-    <img class="w-20 h-20" src="/favicon.svg" alt="logo"/>
+    <img class="w-20 h-20" src="/favicon.svg" alt="PhotoLoom GmbH Logo"/>
     <p>
       PhotoLoom GmbH
       <br />

@@ -6,45 +6,80 @@
     name: string
     freeIncluded?: boolean
     proIncluded?: boolean
+    studioIncluded?: boolean
     freeString?: string
     proString?: string
+    studioString?: string
     header?: boolean
   }
 
   const planFeatures: PlanFeatureRow[] = [
     {
-      name: "Section 1",
-      header: true,
+      name: "Cloud",
+      header: true
     },
     {
-      name: "Feature 1",
+      name: "10 GB",
       freeIncluded: true,
       proIncluded: true,
+      studioIncluded: true
     },
     {
-      name: "Feature 2",
+      name: "2 TB",
       freeIncluded: false,
       proIncluded: true,
+      studioIncluded: true
     },
     {
-      name: "Feature 3",
-      freeString: "3",
-      proString: "Unlimited",
+      name: "Unlimitiert",
+      freeIncluded: false,
+      proIncluded: false,
+      studioIncluded: true
     },
     {
-      name: "Section 2",
-      header: true,
+      name: "Support",
+      header: true
     },
     {
-      name: "Feature 4",
+      name: "Ticket Support",
       freeIncluded: true,
       proIncluded: true,
+      studioIncluded: true
     },
     {
-      name: "Feature 5",
+      name: "Priority Support",
       freeIncluded: false,
       proIncluded: true,
+      studioIncluded: true
     },
+    {
+      name: "24/7 Support",
+      freeIncluded: false,
+      proIncluded: false,
+      studioIncluded: true
+    },
+    {
+      name: "Verkaufen",
+      header: true
+    },
+    {
+      name: "Limitierung",
+      freeIncluded: true,
+      proIncluded: false,
+      studioIncluded: false
+    },
+    {
+      name: "Keine Provision",
+      freeIncluded: false,
+      proIncluded: false,
+      studioIncluded: true
+    },
+    {
+      name: "Branding",
+      freeIncluded: false,
+      proIncluded: true,
+      studioIncluded: true
+    }
   ]
 </script>
 
@@ -91,7 +126,7 @@
 
     <h1 class="text-2xl font-bold text-center mt-16">Plan Features</h1>
     <h2 class="text-xl text-center text-slate-500 mt-1 pb-3">
-      Example feature table
+      Vergleiche unsere Pläne
     </h2>
 
     <div class="overflow-visible mx-auto max-w-xl mt-4">
@@ -99,62 +134,82 @@
         <thead
           class="text-lg sticky top-0 bg-base-100 bg-opacity-50 z-10 backdrop-blur-sm"
         >
-          <tr>
-            <th></th>
-            <th class="text-center">Free</th>
-            <th class="text-center">Pro</th>
-          </tr>
+        <tr>
+          <th></th>
+          <th class="text-center">Free</th>
+          <th class="text-center">Pro</th>
+          <th class="text-center">Studio</th>
+        </tr>
         </thead>
         <tbody>
-          {#each planFeatures as feature}
-            {#if feature.header}
-              <tr class="bg-base-200 font-bold">
-                <td colspan="3">{feature.name} </td>
-              </tr>
-            {:else}
-              <tr class="relative">
-                <td>{feature.name} </td>
-                <td class="text-center">
-                  {#if feature.freeString}
-                    {feature.freeString}
-                  {:else if feature.freeIncluded}
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="w-8 h-8 ml-2 inline text-success"
-                    >
-                      <use href="#checkcircle" />
-                    </svg>
-                  {:else}
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="w-[26px] h-[26px] inline text-base-200"
-                    >
-                      <use href="#nocircle" />
-                    </svg>
-                  {/if}
-                </td>
-                <td class="text-center">
-                  {#if feature.proString}
-                    {feature.proString}
-                  {:else if feature.proIncluded}
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="w-8 h-8 ml-2 inline text-success"
-                    >
-                      <use href="#checkcircle" />
-                    </svg>
-                  {:else}
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="w-[26px] h-[26px] inline text-base-200"
-                    >
-                      <use href="#nocircle" />
-                    </svg>
-                  {/if}
-                </td>
-              </tr>
-            {/if}
-          {/each}
+        {#each planFeatures as feature}
+          {#if feature.header}
+            <tr class="bg-base-200 font-bold">
+              <td colspan="3">{feature.name} </td>
+            </tr>
+          {:else}
+            <tr class="relative">
+              <td>{feature.name} </td>
+              <td class="text-center">
+                {#if feature.freeString}
+                  {feature.freeString}
+                {:else if feature.freeIncluded}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-8 h-8 ml-2 inline text-success"
+                  >
+                    <use href="#checkcircle" />
+                  </svg>
+                {:else}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-[26px] h-[26px] inline text-base-200"
+                  >
+                    <use href="#nocircle" />
+                  </svg>
+                {/if}
+              </td>
+              <td class="text-center">
+                {#if feature.proString}
+                  {feature.proString}
+                {:else if feature.proIncluded}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-8 h-8 ml-2 inline text-success"
+                  >
+                    <use href="#checkcircle" />
+                  </svg>
+                {:else}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-[26px] h-[26px] inline text-base-200"
+                  >
+                    <use href="#nocircle" />
+                  </svg>
+                {/if}
+              </td>
+              <td class="text-center">
+                {#if feature.studioString}
+                  {feature.studioString}
+                {:else if feature.studioIncluded}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-8 h-8 ml-2 inline text-success"
+                  >
+                    <use href="#checkcircle" />
+                  </svg>
+                {:else}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-[26px] h-[26px] inline text-base-200"
+                  >
+                    <use href="#nocircle" />
+                  </svg>
+                {/if}
+              </td>
+            </tr>
+          {/if}
+        {/each}
         </tbody>
       </table>
     </div>

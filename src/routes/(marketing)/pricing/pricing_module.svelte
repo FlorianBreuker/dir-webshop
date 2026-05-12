@@ -13,7 +13,7 @@
     highlightedPlanId = "",
     callToAction,
     currentPlanId = "",
-    center = true,
+    center = true
   }: Props = $props()
 </script>
 
@@ -53,13 +53,11 @@
                 Current Plan
               </div>
             {:else}
-              <a
-                href={"/account/subscribe/" +
-                  (plan?.stripe_price_id ?? "free_plan")}
+              <button
                 class="btn btn-primary w-[80%] mx-auto"
               >
                 {callToAction}
-              </a>
+              </button>
             {/if}
           </div>
         </div>

@@ -62,7 +62,7 @@
         <img
           src="https://images.unsplash.com/photo-1523698120758-030a38a90d16"
           class="max-w-sm rounded-lg shadow-2xl"
-          alt="Photo Gallery"
+          alt="Collection"
         />
         <div>
           <h1 class="text-5xl font-bold">Sichere Smart Galleries</h1>

@@ -18,20 +18,18 @@
         style="line-height: 1.2;"
       >
         Die
-        <span
-          class="underline decoration-secondary decoration-4 md:decoration-[6px]"
-        >intelligente</span
-        >,
-        <span
-          class="underline decoration-secondary decoration-4 md:decoration-[6px]"
-        >sichere</span
-        > und
-        <span
-          class="underline decoration-secondary decoration-4 md:decoration-[6px]"
-        >verkaufsorientierte</span
-        >
+        <span class="text-primary italic">
+    intelligente
+  </span>,
+        <span class="text-primary italic">
+    sichere
+  </span> und
+        <span class="text-primary italic">
+    verkaufsorientierte
+  </span>
         <span> Cloud für Fotografen</span>
       </div>
+
       <div class="mt-6 md:mt-10 text-sm md:text-lg">
         Verwalte deine Kunden, teile passwortgeschützte Galerien mit Unternehmen oder Einrichtungen und verkaufe deine
         Bilder automatisiert über unseren integrierten Webshop.
@@ -57,7 +55,7 @@
         <img
           src="https://images.unsplash.com/photo-1523698120758-030a38a90d16"
           class="max-w-sm rounded-lg shadow-2xl"
-          alt="Collection Image"
+          alt="Collection of memories"
         />
         <div>
           <h1 class="text-5xl font-bold">Sichere Smart Galleries</h1>
@@ -74,7 +72,7 @@
         <img
           src="https://images.unsplash.com/photo-1522198734915-76c764a8454d"
           class="max-w-sm rounded-lg shadow-2xl"
-          alt="Webshop Image"
+          alt="Webshop on a notebook"
         />
         <div>
           <h1 class="text-5xl font-bold">Integrierter Webshop</h1>
@@ -91,7 +89,7 @@
         <img
           src="https://images.unsplash.com/photo-1594810205183-18a8b0ce6c13"
           class="max-w-sm rounded-lg shadow-2xl"
-          alt="European Union Image"
+          alt="European Union flags"
         />
         <div>
           <h1 class="text-5xl font-bold">Cloud Lösungen</h1>

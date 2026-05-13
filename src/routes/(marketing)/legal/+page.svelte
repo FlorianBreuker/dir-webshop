@@ -47,10 +47,10 @@
 
   <div class="bg-base-100">
     <h1 class="text-3xl font-bold">Impressum</h1>
-    <div class="max-w-3xl mx-auto bg-base-100 space-y-8">
+    <div class="bg-base-100">
       {#each legalSections as section}
-        <section>
-          <h2 class="text-2xl mt-4 font-bold mb-2">
+        <div>
+          <h2 class="text-2xl font-bold mt-4">
             {section.title}
           </h2>
 
@@ -60,7 +60,7 @@
                 <span class="font-bold">{item.label}:</span>
 
                 {#if item.isLink}
-                  <a href={item.value} target="_blank" rel="noopener noreferrer" class="link hover:underline">
+                  <a href={item.value} target="_blank" class="link hover:underline">
                     {item.value}
                   </a>
                 {:else if item.isEmail}
@@ -68,12 +68,12 @@
                     {item.value}
                   </a>
                 {:else}
-                  <span class="text-gray-700">{item.value}</span>
+                  <span class="">{item.value}</span>
                 {/if}
               </li>
             {/each}
           </ul>
-        </section>
+        </div>
       {/each}
     </div>
     <h2 class="text-2xl mt-4 font-bold mb-2">Urheberrechtshinweise und Lizenzen</h2>

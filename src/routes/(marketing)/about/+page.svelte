@@ -18,6 +18,16 @@
   <div class="bg-base-100">
     <h1 class="text-4xl font-extrabold tracking-tight mb-8">Über PhotoLoom</h1>
 
+    <p class="mb-6 leading-relaxed">
+      PhotoLoom ist ein junges Unternehmen aus Wien und setzt sich als Ziel, Fotografen eine All-in-One Plattform zum
+      Organisieren und Verkaufen zu bieten.
+    </p>
+
+    <p class="mb-6 leading-relaxed">
+      Wir sind fünf Freunde die sich seit ihrer Schulzeit in Vorarlberg kennen und durch ihr Studium an der Technischen
+      Univerisät nach Wien gezogen sind.
+    </p>
+
     <h2 class="text-2xl font-bold mb-4">Unsere Markenidentität</h2>
     <p class="mb-6 leading-relaxed">
       Die Marke <b>PhotoLoom</b> steht für die Verbindung von Technik und Handwerk.

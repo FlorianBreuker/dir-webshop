@@ -26,7 +26,7 @@
     </div>
   </div>
 
-  <main class="grow">
+  <main class="grow font-sans">
     {@render children?.()}
   </main>
 

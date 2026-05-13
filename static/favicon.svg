@@ -1,23 +1,26 @@
 <svg width="1000" height="1000" xmlns="http://www.w3.org/2000/svg">
  <g id="Layer_1">
   <title>Layer 1</title>
-  <ellipse stroke-width="20" ry="80" rx="490" id="svg_1" cy="500" cx="500" stroke="#000" fill="#fff"/>
-  <ellipse transform="rotate(10, 500, 500)" stroke-width="20" ry="80" rx="490" id="svg_3" cy="500" cx="500" stroke="#000" fill="#fff"/>
-  <ellipse transform="rotate(20, 500, 500)" stroke-width="20" ry="80" rx="490" id="svg_4" cy="500" cx="500" stroke="#000" fill="#fff"/>
-  <ellipse transform="rotate(30, 500, 500)" stroke-width="20" ry="80" rx="490" id="svg_5" cy="500" cx="500" stroke="#000" fill="#fff"/>
-  <ellipse transform="rotate(40, 500, 500)" stroke-width="20" ry="80" rx="490" id="svg_6" cy="500" cx="500" stroke="#000" fill="#fff"/>
-  <ellipse transform="rotate(50, 500, 500)" stroke-width="20" ry="80" rx="490" id="svg_7" cy="500" cx="500" stroke="#000" fill="#fff"/>
-  <ellipse transform="rotate(60, 500, 500)" stroke-width="20" ry="80" rx="490" id="svg_8" cy="500" cx="500" stroke="#000" fill="#fff"/>
-  <ellipse transform="rotate(70, 500, 500)" stroke-width="20" ry="80" rx="490" id="svg_9" cy="500" cx="500" stroke="#000" fill="#fff"/>
-  <ellipse transform="rotate(80, 500, 500)" stroke-width="20" ry="80" rx="490" id="svg_10" cy="500" cx="500" stroke="#000" fill="#fff"/>
-  <ellipse transform="rotate(90, 500, 500)" stroke-width="20" ry="80" rx="490" id="svg_11" cy="500" cx="500" stroke="#000" fill="#fff"/>
-  <ellipse transform="rotate(100, 500, 500)" stroke-width="20" ry="80" rx="490" id="svg_12" cy="500" cx="500" stroke="#000" fill="#fff"/>
-  <ellipse transform="rotate(110, 500, 500)" stroke-width="20" ry="80" rx="490" id="svg_13" cy="500" cx="500" stroke="#000" fill="#fff"/>
-  <ellipse transform="rotate(120, 500, 500)" stroke-width="20" ry="80" rx="490" id="svg_14" cy="500" cx="500" stroke="#000" fill="#fff"/>
-  <ellipse transform="rotate(130, 500, 500)" stroke-width="20" ry="80" rx="490" id="svg_15" cy="500" cx="500" stroke="#000" fill="#fff"/>
-  <ellipse transform="rotate(140, 500, 500)" stroke-width="20" ry="80" rx="490" id="svg_16" cy="500" cx="500" stroke="#000" fill="#fff"/>
-  <ellipse transform="rotate(150, 500, 500)" stroke-width="20" ry="80" rx="490" id="svg_17" cy="500" cx="500" stroke="#000" fill="#fff"/>
-  <ellipse transform="rotate(160, 500, 500)" stroke-width="20" ry="80" rx="490" id="svg_18" cy="500" cx="500" stroke="#000" fill="#fff"/>
-  <ellipse transform="rotate(170, 500, 500)" stroke-width="20" ry="80" rx="490" id="svg_19" cy="500" cx="500" stroke="#000" fill="#fff"/>
+  <g id="svg_1">
+   <ellipse fill="#fff" stroke="#000" cx="500.22159" cy="500.66703" id="svg_20" rx="496.66653" ry="198.66661" stroke-width="7"/>
+   <ellipse fill="#fff" stroke="#000" cx="202.2141" cy="203.84412" id="svg_21" rx="200" ry="80" stroke-width="7" transform="matrix(2.44561, 0.431226, -0.431226, 2.44561, 93.5884, -85.0553)"/>
+   <ellipse fill="#fff" stroke="#000" cx="202.17373" cy="203.69345" id="svg_22" rx="200" ry="80" stroke-width="7" transform="matrix(2.33357, 0.84935, -0.84935, 2.33357, 201.442, -146.382)"/>
+   <ellipse fill="#fff" stroke="#000" cx="202.10781" cy="203.55208" id="svg_23" rx="200" ry="80" stroke-width="7" transform="matrix(2.15063, 1.24167, -1.24167, 2.15063, 318.306, -188.049)"/>
+   <ellipse fill="#fff" stroke="#000" cx="202.01834" cy="203.42431" id="svg_24" rx="200" ry="80" stroke-width="7" transform="matrix(1.90234, 1.59626, -1.59626, 1.90234, 440.63, -208.789)"/>
+   <ellipse fill="#fff" stroke="#000" cx="201.90804" cy="203.31401" id="svg_25" rx="200" ry="80" stroke-width="7" transform="matrix(1.59626, 1.90234, -1.90234, 1.59626, 564.697, -207.973)"/>
+   <ellipse fill="#fff" stroke="#000" cx="201.78027" cy="203.22454" id="svg_26" rx="200" ry="80" stroke-width="7" transform="matrix(1.24167, 2.15063, -2.15063, 1.24167, 686.737, -185.626)"/>
+   <ellipse fill="#fff" stroke="#000" cx="201.6389" cy="203.15862" id="svg_27" rx="200" ry="80" stroke-width="7" transform="matrix(0.84935, 2.33357, -2.33357, 0.84935, 803.043, -142.425)"/>
+   <ellipse fill="#fff" stroke="#000" cx="201.48823" cy="203.11825" id="svg_28" rx="200" ry="80" stroke-width="7" transform="matrix(0.431226, 2.44561, -2.44561, 0.431226, 910.079, -79.6826)"/>
+   <ellipse fill="#fff" stroke="#000" cx="201.33284" cy="203.10465" id="svg_29" rx="200" ry="80" stroke-width="7" transform="matrix(0, 2.48333, -2.48333, 0, 1004.6, 0.688955)"/>
+   <ellipse fill="#fff" stroke="#000" cx="201.17745" cy="203.11822" id="svg_30" rx="200" ry="80" stroke-width="7" transform="matrix(-0.431226, 2.44561, -2.44561, -0.431226, 1083.72, 96.2544)"/>
+   <ellipse fill="#fff" stroke="#000" cx="201.02677" cy="203.1586" id="svg_31" rx="200" ry="80" stroke-width="7" transform="matrix(-0.84935, 2.33357, -2.33357, -0.84935, 1145.04, 204.11)"/>
+   <ellipse fill="#fff" stroke="#000" cx="200.8854" cy="203.22452" id="svg_32" rx="200" ry="80" stroke-width="7" transform="matrix(-1.24167, 2.15063, -2.15063, -1.24167, 1186.71, 320.972)"/>
+   <ellipse fill="#fff" stroke="#000" cx="200.75762" cy="203.31399" id="svg_33" rx="200" ry="80" stroke-width="7" transform="matrix(-1.59626, 1.90234, -1.90234, -1.59626, 1207.45, 443.296)"/>
+   <ellipse fill="#fff" stroke="#000" cx="200.64732" cy="203.42429" id="svg_34" rx="200" ry="80" stroke-width="7" transform="matrix(-1.90234, 1.59626, -1.59626, -1.90234, 1206.63, 567.365)"/>
+   <ellipse fill="#fff" stroke="#000" cx="200.55785" cy="203.55207" id="svg_35" rx="200" ry="80" stroke-width="7" transform="matrix(-2.15063, 1.24167, -1.24167, -2.15063, 1184.29, 689.404)"/>
+   <ellipse fill="#fff" stroke="#000" cx="200.49193" cy="203.69344" id="svg_36" rx="200" ry="80" stroke-width="7" transform="matrix(-2.33357, 0.84935, -0.84935, -2.33357, 1141.09, 805.709)"/>
+   <ellipse fill="#fff" stroke="#000" cx="200.45155" cy="203.84412" id="svg_37" rx="200" ry="80" stroke-width="7" transform="matrix(-2.44561, 0.431226, -0.431226, -2.44561, 1078.35, 912.747)"/>
+  </g>
  </g>
+
 </svg>

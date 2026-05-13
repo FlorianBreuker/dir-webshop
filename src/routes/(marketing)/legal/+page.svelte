@@ -45,6 +45,17 @@
       </a>.
     </div>
     <div class="mb-2">
+      Die verwendete Font
+      <a class="link"
+         target="_blank"
+         href="https://fonts.google.com/specimen/Open+Sans">Open Sans
+      </a> ist frei verwendbar unter Verwendung ihrer
+      <a class="link"
+         target="_blank"
+         href="https://fonts.google.com/specimen/Open+Sans/license">Lizenz
+      </a>.
+    </div>
+    <div class="mb-2">
       Als Template für diese Website wurde
       <a class="link"
          target="_blank"
@@ -54,6 +65,13 @@
          target="_blank"
          href="https://github.com/scosman/CMSaasStarter/blob/main/LICENSE">Lizenz
       </a> ist.
+    </div>
+    <div class="mb-2">
+      Anpassungen am Template wurden von
+      <a class="link"
+         target="_blank"
+         href="https://github.com/FlorianBreuker/dir-webshop">Florian Breuker
+      </a> vorgenommen.
     </div>
   </div>
 </div>

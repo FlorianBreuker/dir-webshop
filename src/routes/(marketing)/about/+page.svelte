@@ -32,7 +32,7 @@
     <p class="mb-6 leading-relaxed">
       Die Marke <b>PhotoLoom</b> steht für die Verbindung von Technik und Handwerk.
       Der "Loom" (Webstuhl) soll dabei dem Handwerk einen besonderen Wert zuweisen.
-      Unsere Marke ist gemäß des Nizza-Abkommens der Klasse 42 (SaaS - Software as a Service) zugehörigig.
+      Unsere Marke ist gemäß des Nizza-Abkommens den Klasse 42 (SaaS - Software as a Service) und Klasse 9 (Computersoftware) zugehörigig.
     </p>
 
     <h2 class="text-2xl font-bold mb-4">Bildmarke</h2>

@@ -18,7 +18,7 @@
   <div class="bg-base-100">
     <h1 class="text-3xl font-bold">Barrierefreiheitserklärung</h1>
 
-    <div class="w-full my-8">
+    <div class="w-full my-8 leading-relaxed">
       <p>Die PhotoLoom GmbH ist bestrebt, ihre Website im Einklang mit dem Web-Zugänglichkeits-Gesetz (WZG) barrierefrei
         zugänglich zu machen.
         Diese Erklärung zur Barrierefreiheit gilt für die Website

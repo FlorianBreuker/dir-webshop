@@ -1,7 +1,6 @@
 <script lang="ts">
-  import { enhance, applyAction } from "$app/forms"
-  import type { SubmitFunction } from "@sveltejs/kit"
   import type { FullAutoFill } from "svelte/elements"
+  import { WebsiteName } from "../../../config"
 
   let errors: { [fieldName: string]: string } = $state({})
   let loading = $state(false)
@@ -47,6 +46,11 @@
   ]
 
 </script>
+
+<svelte:head>
+  <title>Kontakt</title>
+  <meta name="description" content="Kontakt - {WebsiteName}" />
+</svelte:head>
 
 <div class="min-h-[70vh] pb-8 pt-[5vh] container mx-auto max-w-3xl ">
   <div class="absolute bottom-100 right-45 w-200 h-200 pointer-events-none opacity-20 sm:opacity-40 -z-10">

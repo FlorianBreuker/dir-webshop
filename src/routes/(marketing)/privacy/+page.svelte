@@ -73,8 +73,7 @@
         Kommunikationsdaten basierend auf unserem berechtigten Interessen des fehlerfreien Betriebs (Crashreports)
         unserer Software (Artikel 6 Absatz 1f DSGVO) von uns gespeichert.
       </p>
-      <p class="mb-3">Zudem werden werden beim Kauf Name, Bankdaten und Anschrift an den externen Zahlungsdienstleister
-        Stripe weitergegeben.</p>
+      <p class="mb-3">Zudem werden werden beim Kauf Name, Bankdaten und Anschrift erfasst.</p>
 
       <!--Cookies-->
       <h2 class="text-2xl font-bold mb-3">Cookies</h2>
@@ -114,6 +113,25 @@
                href="https://policies.google.com/privacy">policies.google.com/privacy
         </a></li>
       </ul>
+
+      <!--Empfänger-->
+      <h2 class="text-2xl font-bold mb-3">Empfänger</h2>
+      <p class="mb-3">
+        <a class="link"
+           target="_blank"
+           href="https://vercel.com/">Vercel
+        </a> als Hosting Provider für diese Website.
+      </p>
+      <p class="mb-3">
+        <a class="link"
+           target="_blank"
+           href="https://developers.google.com/fonts">Google Fonts
+        </a> als Anbieter für Fonts.
+      </p>
+      <p class="mb-3">
+        Im Rahmen dieses Studentenprojekts gibt es keine weiteren Empfänger der Daten. Jedoch sind hier zum Beispiel
+        Zahlungsdienstleister zu vermerken.
+      </p>
 
       <!--Speicherdauer-->
       <h2 class="text-2xl font-bold mb-3">Speicherdauer</h2>

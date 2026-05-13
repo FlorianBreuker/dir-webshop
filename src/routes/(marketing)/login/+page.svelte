@@ -14,12 +14,12 @@
     />
   </div>
   <div class="bg-base-100">
-    <h1 class="text-xl font-bold">Get Started</h1>
-    <button class="btn btn-primary mt-3 btn-wide">Sign Up</button>
+    <h1 class="text-xl font-bold">Jetzt Starten</h1>
+    <button class="btn btn-primary mt-3 btn-wide">Registrieren</button>
 
 
-    <h1 class="text-xl mt-6">Already have an account?</h1>
-    <button class="btn btn-outline btn-primary mt-3 btn-wide">Sign In
+    <h1 class="text-xl mt-6">Haben Sie bereits einen Account?</h1>
+    <button class="btn btn-outline btn-primary mt-3 btn-wide">Anmelden
     </button
     >
   </div>

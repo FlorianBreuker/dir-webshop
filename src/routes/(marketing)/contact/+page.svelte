@@ -5,7 +5,6 @@
 
   let errors: { [fieldName: string]: string } = $state({})
   let loading = $state(false)
-  let showSuccess = $state(false)
 
   interface FormField {
     id: string
@@ -17,63 +16,39 @@
   const formFields: FormField[] = [
     {
       id: "first_name",
-      label: "First Name *",
+      label: "Vorname",
       inputType: "text",
-      autocomplete: "given-name",
+      autocomplete: "given-name"
     },
     {
       id: "last_name",
-      label: "Last Name *",
+      label: "Nachname",
       inputType: "text",
-      autocomplete: "family-name",
+      autocomplete: "family-name"
     },
     {
       id: "email",
-      label: "Email *",
+      label: "E-Mail",
       inputType: "email",
-      autocomplete: "email",
-    },
-    {
-      id: "phone",
-      label: "Phone Number",
-      inputType: "tel",
-      autocomplete: "tel",
+      autocomplete: "email"
     },
     {
       id: "company",
-      label: "Company Name",
+      label: "Firma",
       inputType: "text",
-      autocomplete: "organization",
+      autocomplete: "organization"
     },
     {
       id: "message",
-      label: "Message",
+      label: "Nachricht",
       inputType: "textarea",
-      autocomplete: "off",
-    },
+      autocomplete: "off"
+    }
   ]
 
-  const handleSubmit: SubmitFunction = () => {
-    loading = true
-    errors = {}
-    return async ({ update, result }) => {
-      await update({ reset: false })
-      await applyAction(result)
-      loading = false
-      if (result.type === "success") {
-        showSuccess = true
-      } else if (result.type === "failure") {
-        errors = result.data?.errors ?? {}
-      } else if (result.type === "error") {
-        errors = { _: "An error occurred. Please check inputs and try again." }
-      }
-    }
-  }
 </script>
 
-<div
-  class="flex flex-col lg:flex-row mx-auto my-4 min-h-[70vh] place-items-center lg:place-items-start place-content-center"
->
+<div class="min-h-[70vh] pb-8 pt-[5vh] container mx-auto max-w-3xl ">
   <div class="absolute bottom-100 right-45 w-200 h-200 pointer-events-none opacity-20 sm:opacity-40 -z-10">
     <img
       src="/mustermarke.svg"
@@ -81,57 +56,43 @@
       class="w-full h-full object-contain -rotate-45"
     />
   </div>
-  <div
-    class="max-w-[400px] lg:max-w-[500px] flex flex-col place-content-center p-4 lg:mr-8 lg:mb-8 lg:min-h-[70vh] bg-base-100"
-  >
-    <div class="px-6">
-      <h1 class="text-2xl lg:text-4xl font-bold mb-4">Contact Us</h1>
-      <p class="text-lg">Talk to one of our service professionals to:</p>
-      <ul class="list-disc list-outside pl-6 py-4 space-y-1">
-        <li class="">Get a live demo</li>
-        <li class="">Discuss your specific needs</li>
-        <li>Get a quote</li>
-        <li>Answer any technical questions you have</li>
-      </ul>
-      <p>Once you complete the form, we'll reach out to you! *</p>
-      <p class="text-sm pt-8">
-        *Not really for this demo page, but you should say something like that
-        😉
-      </p>
-    </div>
-  </div>
-
-  <div
-    class="flex flex-col grow m-4 lg:ml-10 min-w-[300px] stdphone:min-w-[360px] max-w-[400px] place-content-center lg:min-h-[70vh] bg-base-100"
-  >
-    {#if showSuccess}
-      <div class="flex flex-col place-content-center lg:min-h-[70vh]">
-        <div
-          class="card card-bordered shadow-lg py-6 px-6 mx-2 lg:mx-0 lg:p-6 mb-10"
-        >
-          <div class="text-2xl font-bold mb-4">Thank you!</div>
-          <p class="">We've received your message and will be in touch soon.</p>
+  <div class="bg-base-100 p-10">
+    <h1 class="text-3xl font-bold mb-8">Kontakt</h1>
+    <div
+      class="flex flex-col lg:flex-row mx-auto my-4 place-items-center lg:place-items-start place-content-center">
+      <div
+        class="max-w-[400px] lg:max-w-[500px] flex flex-col place-content-center p-4 lg:mr-8 lg:mb-8 bg-base-100"
+      >
+        <div class="px-6">
+          <p class="text-lg">Reden Sie mit unserem Team über:</p>
+          <ul class="list-disc list-outside pl-6 py-4 space-y-1">
+            <li class="">Preise</li>
+            <li>technische Anforderungen</li>
+            <li>zusätzlichen Speicherplatz</li>
+          </ul>
+          <p>Nach Ihrer Anfrage kümmern wir uns persönlich über Ihre Anliegen und melden uns schnellstmöglich bei
+            Ihnen.</p>
         </div>
       </div>
-    {:else}
-      <div class="card card-bordered shadow-lg p-4 pt-6 mx-2 lg:mx-0 lg:p-6">
-        <form
-          class="form-widget flex flex-col"
-          method="POST"
-          action="?/submitContactUs"
-          use:enhance={handleSubmit}
-        >
-          {#each formFields as field}
-            <label for={field.id}>
-              <div class="flex flex-row">
-                <div class="text-base font-bold">{field.label}</div>
-                {#if errors[field.id]}
-                  <div class="text-error grow text-sm ml-2 text-right">
-                    {errors[field.id]}
-                  </div>
-                {/if}
-              </div>
-              {#if field.inputType === "textarea"}
+
+      <div
+        class="flex flex-col grow m-4 lg:ml-10 min-w-[300px] stdphone:min-w-[360px] max-w-[400px] place-content-center bg-base-100"
+      >
+        <div class="card card-bordered shadow-lg p-4 pt-6 mx-2 lg:mx-0 lg:p-6">
+          <form
+            class="form-widget flex flex-col"
+          >
+            {#each formFields as field}
+              <label for={field.id}>
+                <div class="flex flex-row">
+                  <div class="text-base font-bold">{field.label}</div>
+                  {#if errors[field.id]}
+                    <div class="text-error grow text-sm ml-2 text-right">
+                      {errors[field.id]}
+                    </div>
+                  {/if}
+                </div>
+                {#if field.inputType === "textarea"}
                 <textarea
                   id={field.id}
                   name={field.id}
@@ -141,31 +102,32 @@
                     ? 'input-error'
                     : ''} h-24 input-sm mt-1 input input-bordered w-full mb-3 text-base py-4"
                 ></textarea>
-              {:else}
-                <input
-                  id={field.id}
-                  name={field.id}
-                  type={field.inputType}
-                  autocomplete={field.autocomplete}
-                  class="{errors[field.id]
+                {:else}
+                  <input
+                    id={field.id}
+                    name={field.id}
+                    type={field.inputType}
+                    autocomplete={field.autocomplete}
+                    class="{errors[field.id]
                     ? 'input-error'
                     : ''} input-sm mt-1 input input-bordered w-full mb-3 text-base py-4"
-                />
-              {/if}
-            </label>
-          {/each}
+                  />
+                {/if}
+              </label>
+            {/each}
 
-          {#if Object.keys(errors).length > 0}
-            <p class="text-red-600 text-sm mb-2">
-              Please resolve above issues.
-            </p>
-          {/if}
+            {#if Object.keys(errors).length > 0}
+              <p class="text-error text-sm mb-2">
+                Please resolve above issues.
+              </p>
+            {/if}
 
-          <button class="btn btn-primary {loading ? 'btn-disabled' : ''}"
-            >{loading ? "Submitting" : "Submit"}</button
-          >
-        </form>
+            <button class="btn btn-primary {loading ? 'btn-disabled' : ''}"
+            >Absenden</button
+            >
+          </form>
+        </div>
       </div>
-    {/if}
+    </div>
   </div>
 </div>

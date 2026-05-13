@@ -126,7 +126,7 @@
               <div class="flex flex-row">
                 <div class="text-base font-bold">{field.label}</div>
                 {#if errors[field.id]}
-                  <div class="text-red-600 grow text-sm ml-2 text-right">
+                  <div class="text-error grow text-sm ml-2 text-right">
                     {errors[field.id]}
                   </div>
                 {/if}

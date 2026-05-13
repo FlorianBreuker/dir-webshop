@@ -61,7 +61,8 @@
 
   <footer class="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4">
     <aside>
-      <p>Copyright © {new Date().getFullYear()} - Alle Rechte vorbehalten von PhotoLoom GmbH</p>
+      <p>Copyright © {new Date().getFullYear()} - Alle Rechte vorbehalten von PhotoLoom GmbH - Ein fiktives Projekt von
+        einem Studenten der TU Wien - Es werden keinerlei Leistungen angeboten</p>
     </aside>
   </footer>
 

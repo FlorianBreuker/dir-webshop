@@ -8,6 +8,13 @@
 </svelte:head>
 
 <div class="min-h-[70vh] pb-8 pt-[5vh] container mx-auto max-w-2xl">
+  <div class="absolute bottom-100 -right-20 w-200 h-200 pointer-events-none opacity-20 sm:opacity-40">
+    <img
+      src="/mustermarke.svg"
+      alt=""
+      class="w-full h-full object-contain -rotate-45"
+    />
+  </div>
   <h1 class="text-3xl font-bold">Impressum</h1>
 
 
@@ -34,5 +41,16 @@
        target="_blank"
        href="https://github.com/lucide-icons/lucide/blob/main/LICENSE">Lizenz
     </a>.
+  </div>
+  <div class="mb-2">
+    Als Template für diese Website wurde
+    <a class="link"
+       target="_blank"
+       href="https://github.com/scosman/CMSaasStarter">SaaS Starter
+    </a> verwendet welches freiverwendbar unter ihrer
+    <a class="link"
+       target="_blank"
+       href="https://github.com/scosman/CMSaasStarter/blob/main/LICENSE">Lizenz
+    </a> ist.
   </div>
 </div>

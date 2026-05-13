@@ -90,12 +90,19 @@
 </svelte:head>
 
 <div class="min-h-[70vh] pb-8 pt-[5vh] px-4">
+  <div class="absolute bottom-100 -right-20 w-200 h-200 pointer-events-none opacity-20 sm:opacity-40">
+    <img
+      src="/mustermarke.svg"
+      alt=""
+      class="w-full h-full object-contain -rotate-45"
+    />
+  </div>
   <h1 class="text-3xl font-bold text-center">Preise</h1>
   <h2 class="text-xl text-center text-slate-500 mt-1 pb-3">
     Starten Sie mit PhotoLoom durch
   </h2>
 
-  <div class="w-full my-8">
+  <div class="z-30 w-full my-8">
     <PricingModule callToAction="Get Started" highlightedPlanId="free" />
 
     <div class="overflow-visible mx-auto max-w-xl mt-16">

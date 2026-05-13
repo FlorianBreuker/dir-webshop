@@ -2,7 +2,7 @@
   import {
     WebsiteName,
     WebsiteDescription
-  } from "./../../config"
+  } from "../../config"
 </script>
 
 <svelte:head>
@@ -11,6 +11,13 @@
 </svelte:head>
 
 <div class="hero min-h-[50vh]">
+  <div class="absolute bottom-100 -right-20 w-200 h-200 pointer-events-none opacity-20 sm:opacity-40">
+    <img
+      src="/mustermarke.svg"
+      alt=""
+      class="w-full h-full object-contain -rotate-45"
+    />
+  </div>
   <div class="hero-content text-center py-4">
     <div class="max-w-xl">
       <div

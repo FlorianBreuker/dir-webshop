@@ -11,7 +11,7 @@
 
 <div class="flex flex-col min-h-screen">
 
-  <div class="navbar bg-base-100 container mx-auto">
+  <div class="navbar container mx-auto z-30">
     <div class="flex-1">
       <a class="btn btn-ghost normal-case text-xl" href="/">
         <img class="w-8 h-8" src="/favicon.svg" alt="PhotoLoom GmbH Logo" />

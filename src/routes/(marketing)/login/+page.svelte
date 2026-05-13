@@ -1,8 +1,18 @@
+<script>
+</script>
+
 <svelte:head>
   <title>Log In</title>
 </svelte:head>
 
 <div>
+  <div class="absolute bottom-100 -right-20 w-200 h-200 pointer-events-none opacity-20 sm:opacity-40">
+    <img
+      src="/mustermarke.svg"
+      alt=""
+      class="w-full h-full object-contain -rotate-45"
+    />
+  </div>
   <h1 class="text-xl font-bold">Get Started</h1>
   <button class="btn btn-primary mt-3 btn-wide">Sign Up</button>
 

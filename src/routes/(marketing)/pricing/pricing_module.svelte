@@ -18,13 +18,13 @@
 </script>
 
 <div
-  class="flex flex-col lg:flex-row gap-10 {center
+  class="z-30 flex flex-col lg:flex-row gap-10 {center
     ? 'place-content-center'
     : ''} flex-wrap"
 >
   {#each pricingPlans as plan}
     <div
-      class="flex-none card card-bordered {plan.id === highlightedPlanId
+      class="z-30 flex-none card card-bordered {plan.id === highlightedPlanId
         ? 'border-primary'
         : 'border-gray-200'} shadow-xl flex-1 grow min-w-[260px] max-w-[310px] p-6"
     >

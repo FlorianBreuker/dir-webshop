@@ -89,79 +89,82 @@
   <meta name="description" content="Preise - {WebsiteName}" />
 </svelte:head>
 
-<div class="min-h-[70vh] pb-8 pt-[5vh] px-4">
-  <div class="absolute bottom-100 -right-20 w-200 h-200 pointer-events-none opacity-20 sm:opacity-40">
+<div class="min-h-[70vh] pb-8 pt-[5vh] container mx-auto">
+  <div class="absolute bottom-100 right-45 w-200 h-200 pointer-events-none opacity-20 sm:opacity-40 -z-10">
     <img
       src="/mustermarke.svg"
       alt=""
       class="w-full h-full object-contain -rotate-45"
     />
   </div>
-  <h1 class="text-3xl font-bold text-center">Preise</h1>
-  <h2 class="text-xl text-center text-slate-500 mt-1 pb-3">
-    Starten Sie mit PhotoLoom durch
-  </h2>
+  <div class="">
+    <h1 class="text-3xl font-bold text-center">Preise</h1>
+    <h2 class="text-xl text-center text-slate-500 mt-1 pb-3">
+      Starten Sie mit PhotoLoom durch
+    </h2>
 
-  <div class="z-30 w-full my-8">
-    <PricingModule callToAction="Get Started" highlightedPlanId="free" />
+    <div class="z-30 w-full my-8 bg-base-100">
+      <PricingModule callToAction="Get Started" highlightedPlanId="free" />
 
-    <div class="overflow-visible mx-auto max-w-xl mt-16">
-      <table class="table">
-        <caption class="mb-4">
-          <div class="text-2xl font-bold text-center text-base-content">Plan Features</div>
-          <div class="text-xl text-center text-slate-500 mt-1 pb-3">Vergleiche unsere Pläne</div>
-        </caption>
-        <thead
-          class="text-lg sticky top-0 bg-base-100 bg-opacity-50 z-10 backdrop-blur-sm"
-        >
-        <tr>
-          <td></td>
-          <th class="text-center">Free</th>
-          <th class="text-center">Pro</th>
-          <th class="text-center">Studio</th>
-        </tr>
-        </thead>
-        <tbody>
-        {#each planFeatures as feature}
-          {#if feature.header}
-            <tr class="bg-base-200 font-bold">
-              <td colspan="4">{feature.name} </td>
-            </tr>
-          {:else}
-            <tr class="relative">
-              <td>{feature.name} </td>
-              <td class="text-center">
-                {#if feature.freeString}
-                  {feature.freeString}
-                {:else if feature.freeIncluded}
-                  <BadgeCheck class="w-8 h-8 ml-2 inline text-success"/>
-                {:else}
-                  <Badge class="w-[26px] h-[26px] inline text-base-200"/>
-                {/if}
-              </td>
-              <td class="text-center">
-                {#if feature.proString}
-                  {feature.proString}
-                {:else if feature.proIncluded}
-                  <BadgeCheck class="w-8 h-8 ml-2 inline text-success"/>
-                {:else}
-                  <Badge class="w-[26px] h-[26px] inline text-base-200"/>
-                {/if}
-              </td>
-              <td class="text-center">
-                {#if feature.studioString}
-                  {feature.studioString}
-                {:else if feature.studioIncluded}
-                  <BadgeCheck class="w-8 h-8 ml-2 inline text-success"/>
-                {:else}
-                  <Badge class="w-[26px] h-[26px] inline text-base-200"/>
-                {/if}
-              </td>
-            </tr>
-          {/if}
-        {/each}
-        </tbody>
-      </table>
+      <div class="overflow-visible mx-auto max-w-xl mt-16">
+        <table class="table">
+          <caption class="mb-4">
+            <div class="text-2xl font-bold text-center text-base-content">Plan Features</div>
+            <div class="text-xl text-center text-slate-500 mt-1 pb-3">Vergleiche unsere Pläne</div>
+          </caption>
+          <thead
+            class="text-lg sticky top-0 bg-base-100 bg-opacity-50 z-10 backdrop-blur-sm"
+          >
+          <tr>
+            <td></td>
+            <th class="text-center">Free</th>
+            <th class="text-center">Pro</th>
+            <th class="text-center">Studio</th>
+          </tr>
+          </thead>
+          <tbody>
+          {#each planFeatures as feature}
+            {#if feature.header}
+              <tr class="bg-base-200 font-bold">
+                <td colspan="4">{feature.name} </td>
+              </tr>
+            {:else}
+              <tr class="relative">
+                <td>{feature.name} </td>
+                <td class="text-center">
+                  {#if feature.freeString}
+                    {feature.freeString}
+                  {:else if feature.freeIncluded}
+                    <BadgeCheck class="w-8 h-8 ml-2 inline text-success" />
+                  {:else}
+                    <Badge class="w-[26px] h-[26px] inline text-base-200" />
+                  {/if}
+                </td>
+                <td class="text-center">
+                  {#if feature.proString}
+                    {feature.proString}
+                  {:else if feature.proIncluded}
+                    <BadgeCheck class="w-8 h-8 ml-2 inline text-success" />
+                  {:else}
+                    <Badge class="w-[26px] h-[26px] inline text-base-200" />
+                  {/if}
+                </td>
+                <td class="text-center">
+                  {#if feature.studioString}
+                    {feature.studioString}
+                  {:else if feature.studioIncluded}
+                    <BadgeCheck class="w-8 h-8 ml-2 inline text-success" />
+                  {:else}
+                    <Badge class="w-[26px] h-[26px] inline text-base-200" />
+                  {/if}
+                </td>
+              </tr>
+            {/if}
+          {/each}
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
+
 </div>

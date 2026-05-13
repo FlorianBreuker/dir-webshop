@@ -11,14 +11,14 @@
 </svelte:head>
 
 <div class="hero min-h-[50vh]">
-  <div class="absolute bottom-100 -right-20 w-200 h-200 pointer-events-none opacity-20 sm:opacity-40">
+  <div class="absolute bottom-100 right-45 w-200 h-200 pointer-events-none opacity-20 sm:opacity-40 -z-10">
     <img
       src="/mustermarke.svg"
       alt=""
       class="w-full h-full object-contain -rotate-45"
     />
   </div>
-  <div class="hero-content text-center py-4">
+  <div class="hero-content text-center py-4 bg-base-100">
     <div class="max-w-xl">
       <div
         class="text-4xl md:text-6xl font-bold px-2"
@@ -53,7 +53,7 @@
     </div>
   </div>
 </div>
-<div class="pb-8 px-7">
+<div class="pb-8 px-7 bg-base-100">
   <div
     class="flex gap-6 max-w-[1064px] mx-auto place-content-center flex-wrap"
   >

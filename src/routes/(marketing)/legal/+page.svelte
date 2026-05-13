@@ -8,49 +8,52 @@
 </svelte:head>
 
 <div class="min-h-[70vh] pb-8 pt-[5vh] container mx-auto max-w-2xl">
-  <div class="absolute bottom-100 -right-20 w-200 h-200 pointer-events-none opacity-20 sm:opacity-40">
+  <div class="absolute bottom-100 right-45 w-200 h-200 pointer-events-none opacity-20 sm:opacity-40 -z-10">
     <img
       src="/mustermarke.svg"
       alt=""
       class="w-full h-full object-contain -rotate-45"
     />
   </div>
-  <h1 class="text-3xl font-bold">Impressum</h1>
+
+  <div class="bg-base-100">
+    <h1 class="text-3xl font-bold">Impressum</h1>
 
 
-  <h2 class="text-2xl mt-4 font-bold mb-2">Urheberrechtshinweise und Lizenzen</h2>
-  <div class="mb-2">
-    Alle Bilder dieser Website sind von
-    <a class="link"
-       target="_blank"
-       href="https://unsplash.com">Unsplash
-    </a>
-    und sind frei verwendbar unter Verwendung ihrer
-    <a class="link"
-       target="_blank"
-       href="https://unsplash.com/license">Lizenz
-    </a>.
-  </div>
-  <div class="mb-2">
-    Alle verwendeten Icons sind von
-    <a class="link"
-       target="_blank"
-       href="https://lucide.dev/">Lucide
-    </a> und sind frei verwendbar unter Verwendung ihrer
-    <a class="link"
-       target="_blank"
-       href="https://github.com/lucide-icons/lucide/blob/main/LICENSE">Lizenz
-    </a>.
-  </div>
-  <div class="mb-2">
-    Als Template für diese Website wurde
-    <a class="link"
-       target="_blank"
-       href="https://github.com/scosman/CMSaasStarter">SaaS Starter
-    </a> verwendet welches freiverwendbar unter ihrer
-    <a class="link"
-       target="_blank"
-       href="https://github.com/scosman/CMSaasStarter/blob/main/LICENSE">Lizenz
-    </a> ist.
+    <h2 class="text-2xl mt-4 font-bold mb-2">Urheberrechtshinweise und Lizenzen</h2>
+    <div class="mb-2">
+      Alle Bilder dieser Website sind von
+      <a class="link"
+         target="_blank"
+         href="https://unsplash.com">Unsplash
+      </a>
+      und sind frei verwendbar unter Verwendung ihrer
+      <a class="link"
+         target="_blank"
+         href="https://unsplash.com/license">Lizenz
+      </a>.
+    </div>
+    <div class="mb-2">
+      Alle verwendeten Icons sind von
+      <a class="link"
+         target="_blank"
+         href="https://lucide.dev/">Lucide
+      </a> und sind frei verwendbar unter Verwendung ihrer
+      <a class="link"
+         target="_blank"
+         href="https://github.com/lucide-icons/lucide/blob/main/LICENSE">Lizenz
+      </a>.
+    </div>
+    <div class="mb-2">
+      Als Template für diese Website wurde
+      <a class="link"
+         target="_blank"
+         href="https://github.com/scosman/CMSaasStarter">SaaS Starter
+      </a> verwendet welches freiverwendbar unter ihrer
+      <a class="link"
+         target="_blank"
+         href="https://github.com/scosman/CMSaasStarter/blob/main/LICENSE">Lizenz
+      </a> ist.
+    </div>
   </div>
 </div>

@@ -74,7 +74,7 @@
 <div
   class="flex flex-col lg:flex-row mx-auto my-4 min-h-[70vh] place-items-center lg:place-items-start place-content-center"
 >
-  <div class="absolute bottom-100 -right-20 w-200 h-200 pointer-events-none opacity-20 sm:opacity-40">
+  <div class="absolute bottom-100 right-45 w-200 h-200 pointer-events-none opacity-20 sm:opacity-40 -z-10">
     <img
       src="/mustermarke.svg"
       alt=""
@@ -82,7 +82,7 @@
     />
   </div>
   <div
-    class="max-w-[400px] lg:max-w-[500px] flex flex-col place-content-center p-4 lg:mr-8 lg:mb-8 lg:min-h-[70vh]"
+    class="max-w-[400px] lg:max-w-[500px] flex flex-col place-content-center p-4 lg:mr-8 lg:mb-8 lg:min-h-[70vh] bg-base-100"
   >
     <div class="px-6">
       <h1 class="text-2xl lg:text-4xl font-bold mb-4">Contact Us</h1>
@@ -102,7 +102,7 @@
   </div>
 
   <div
-    class="flex flex-col grow m-4 lg:ml-10 min-w-[300px] stdphone:min-w-[360px] max-w-[400px] place-content-center lg:min-h-[70vh]"
+    class="flex flex-col grow m-4 lg:ml-10 min-w-[300px] stdphone:min-w-[360px] max-w-[400px] place-content-center lg:min-h-[70vh] bg-base-100"
   >
     {#if showSuccess}
       <div class="flex flex-col place-content-center lg:min-h-[70vh]">

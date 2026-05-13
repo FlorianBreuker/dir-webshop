@@ -1,5 +1,34 @@
 <script lang="ts">
   import { WebsiteName } from "../../../config.ts"
+
+  const legalSections = [
+    {
+      title: 'Firmendaten',
+      items: [
+        { label: 'Firmenname', value: 'PhotoLoom GmbH' },
+        { label: 'Firmenbuchnummer', value: 'FN 187187 d' },
+        { label: 'Firmenbuchgericht', value: 'Handelsgericht Wien' },
+        { label: 'Rechtsform', value: 'GmbH' },
+        { label: 'UID-Nummer', value: 'ATU18718769' },
+        { label: 'Web', value: 'https://dir-webshop.vercel.app', isLink: true },
+        { label: 'E-Mail', value: 'contact@photoloom.io', isEmail: true },
+        { label: 'Gewerbebezeichnung', value: 'Dienstleistungen in der Informationstechnik' },
+        { label: 'Aufsichtsbehörde', value: 'Magistratisches Bezirksamt 1160 Wien' }
+      ]
+    },
+    {
+      title: 'Offenlegung nach Mediengesetz',
+      items: [
+        { label: 'Medieninhaber', value: 'PhotoLoom GmbH' },
+        { label: 'Firmensitz', value: 'Huttengasse 41, Top 21, 1160, Wien' },
+        { label: 'Unternehmensgegenstand', value: 'Die Herstellung und der Vertrieb von Software für Fotografen.' },
+        { label: 'Geschäftsführer', value: 'Florian Breuker' },
+        { label: 'Datenschutzbeauftragter', value: 'Florian Breuker' },
+        { label: 'E-Mail', value: 'privacy@photoloom.io', isEmail: true },
+        { label: 'Telefon', value: '+43 660 12345678' }
+      ]
+    }
+  ];
 </script>
 
 <svelte:head>
@@ -18,8 +47,35 @@
 
   <div class="bg-base-100">
     <h1 class="text-3xl font-bold">Impressum</h1>
+    <div class="max-w-3xl mx-auto bg-base-100 space-y-8">
+      {#each legalSections as section}
+        <section>
+          <h2 class="text-2xl mt-4 font-bold mb-2">
+            {section.title}
+          </h2>
 
+          <ul class="space-y-2">
+            {#each section.items as item}
+              <li class="leading-relaxed">
+                <span class="font-bold">{item.label}:</span>
 
+                {#if item.isLink}
+                  <a href={item.value} target="_blank" rel="noopener noreferrer" class="link hover:underline">
+                    {item.value}
+                  </a>
+                {:else if item.isEmail}
+                  <a href="mailto:{item.value}" class="link hover:underline">
+                    {item.value}
+                  </a>
+                {:else}
+                  <span class="text-gray-700">{item.value}</span>
+                {/if}
+              </li>
+            {/each}
+          </ul>
+        </section>
+      {/each}
+    </div>
     <h2 class="text-2xl mt-4 font-bold mb-2">Urheberrechtshinweise und Lizenzen</h2>
     <div class="mb-2">
       Alle Bilder dieser Website sind von

@@ -70,7 +70,7 @@
             <li>technische Anforderungen</li>
             <li>zusätzlichen Speicherplatz</li>
           </ul>
-          <p>Nach Ihrer Anfrage kümmern wir uns persönlich über Ihre Anliegen und melden uns schnellstmöglich bei
+          <p>Nach Ihrer Anfrage kümmern wir uns persönlich um Ihre Anliegen und melden uns schnellstmöglich bei
             Ihnen.</p>
         </div>
       </div>

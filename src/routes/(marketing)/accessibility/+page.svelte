@@ -15,7 +15,7 @@
       class="w-full h-full object-contain -rotate-45"
     />
   </div>
-  <div class="bg-base-100">
+  <div class="bg-base-100 px-20">
     <h1 class="text-3xl font-bold">Barrierefreiheitserklärung</h1>
 
     <div class="w-full my-8 leading-relaxed">

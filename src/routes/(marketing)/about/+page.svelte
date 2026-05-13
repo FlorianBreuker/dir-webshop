@@ -15,7 +15,7 @@
       class="w-full h-full object-contain -rotate-45"
     />
   </div>
-  <div class="bg-base-100">
+  <div class="bg-base-100 px-20">
     <h1 class="text-4xl font-extrabold tracking-tight mb-8">Über PhotoLoom</h1>
 
     <p class="mb-6 leading-relaxed">

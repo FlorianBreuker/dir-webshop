@@ -15,13 +15,12 @@
       class="w-full h-full object-contain -rotate-45"
     />
   </div>
-  <div class="bg-base-100">
+  <div class="bg-base-100 px-20">
     <h1 class="text-3xl font-bold mb-8">Lizenz</h1>
     <p class="leading-relaxed mb-3">Die PhotoLoom GmbH (PhotoLoom), Huttengasse 41, Top 21, 1160 Wien,
       entwickelt, vertreibt und verwaltet Software für selbständige Fotografen und Fotostudios.</p>
     <p class="leading-relaxed">
-      Diese Lizenz regelt die Rechte und Pflichten zwischen PhotoBloom dessen Kunden. Kunden von PhotoBloom sind
-      Unternehmer im Sinne des § 1 Abs 2 KSchG.</p>
+      Diese Lizenz regelt die Rechte und Pflichten zwischen PhotoBloom dessen Kunden.</p>
 
     <div class="w-full my-8">
 

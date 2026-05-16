@@ -3,32 +3,32 @@
 
   const legalSections = [
     {
-      title: 'Firmendaten',
+      title: "Firmendaten",
       items: [
-        { label: 'Firmenname', value: 'PhotoLoom GmbH' },
-        { label: 'Firmenbuchnummer', value: 'FN 187187 d' },
-        { label: 'Firmenbuchgericht', value: 'Handelsgericht Wien' },
-        { label: 'Rechtsform', value: 'GmbH' },
-        { label: 'UID-Nummer', value: 'ATU18718769' },
-        { label: 'Web', value: 'https://dir-webshop.vercel.app', isLink: true },
-        { label: 'E-Mail', value: 'contact@photoloom.io', isEmail: true },
-        { label: 'Gewerbebezeichnung', value: 'Dienstleistungen in der Informationstechnik' },
-        { label: 'Aufsichtsbehörde', value: 'Magistratisches Bezirksamt 1160 Wien' }
+        { label: "Firmenname", value: "PhotoLoom GmbH" },
+        { label: "Firmenbuchnummer", value: "FN 187187 d" },
+        { label: "Firmenbuchgericht", value: "Handelsgericht Wien" },
+        { label: "Rechtsform", value: "GmbH" },
+        { label: "UID-Nummer", value: "ATU18718769" },
+        { label: "Web", value: "https://dir-webshop.vercel.app", isLink: true },
+        { label: "E-Mail", value: "contact@photoloom.io", isEmail: true },
+        { label: "Gewerbebezeichnung", value: "Dienstleistungen in der Informationstechnik" },
+        { label: "Aufsichtsbehörde", value: "Magistratisches Bezirksamt 1160 Wien" }
       ]
     },
     {
-      title: 'Offenlegung nach Mediengesetz',
+      title: "Offenlegung nach Mediengesetz",
       items: [
-        { label: 'Medieninhaber', value: 'PhotoLoom GmbH' },
-        { label: 'Firmensitz', value: 'Huttengasse 41, Top 21, 1160, Wien' },
-        { label: 'Unternehmensgegenstand', value: 'Die Herstellung und der Vertrieb von Software für Fotografen.' },
-        { label: 'Geschäftsführer', value: 'Florian Breuker' },
-        { label: 'Datenschutzbeauftragter', value: 'Florian Breuker' },
-        { label: 'E-Mail', value: 'privacy@photoloom.io', isEmail: true },
-        { label: 'Telefon', value: '+43 660 12345678' }
+        { label: "Medieninhaber", value: "PhotoLoom GmbH" },
+        { label: "Firmensitz", value: "Huttengasse 41, Top 21, 1160, Wien" },
+        { label: "Unternehmensgegenstand", value: "Die Herstellung und der Vertrieb von Software für Fotografen." },
+        { label: "Geschäftsführer", value: "Florian Breuker" },
+        { label: "Datenschutzbeauftragter", value: "Florian Breuker" },
+        { label: "E-Mail", value: "privacy@photoloom.io", isEmail: true },
+        { label: "Telefon", value: "+43 660 12345678" }
       ]
     }
-  ];
+  ]
 </script>
 
 <svelte:head>
@@ -78,7 +78,7 @@
     </div>
     <h2 class="text-2xl mt-4 font-bold mb-2">Urheberrechtshinweise und Lizenzen</h2>
     <div class="mb-2">
-      Alle Bilder dieser Website sind von
+      Alle Bilder und Grafiken (außer unserer Markenidentität) dieser Website sind von
       <a class="link"
          target="_blank"
          href="https://unsplash.com">Unsplash
@@ -88,6 +88,17 @@
          target="_blank"
          href="https://unsplash.com/license">Lizenz
       </a>.
+    </div>
+    <div class="mb-2">
+      Alle Videos dieser Website sind Eigentum von
+      <a class="link"
+         target="_blank"
+         href="https://github.com/FlorianBreuker/">Florian Breuker
+      </a> und stehen nicht zur freien Verwendung. Wenden Sie sich an
+      <a class="link"
+         target="_blank"
+         href="mailto:contact@photoloom.io">contact@photoloom.io
+      </a> für weitere Informationen.
     </div>
     <div class="mb-2">
       Alle verwendeten Icons sind von
@@ -128,6 +139,11 @@
          target="_blank"
          href="https://github.com/FlorianBreuker/dir-webshop">Florian Breuker
       </a> vorgenommen.
+      Für die Erstellung von Sourcecode (KEINE INHALTE) wurde
+      <a class="link"
+         target="_blank"
+         href="https://gemini.google.com">Google Gemini
+      </a> als Hilfe verwendet.
     </div>
   </div>
 </div>

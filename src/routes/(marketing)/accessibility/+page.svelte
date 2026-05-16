@@ -86,7 +86,7 @@
         <div class="mb-2">Weitere Informationen zum Beschwerdeverfahren finden Sie auf
           <a class="link"
              target="_blank"
-             href="www.ffg.at/barrierefreiheit/beschwerdestelle">www.ffg.at/barrierefreiheit/beschwerdestelle
+             href="https://www.ffg.at/barrierefreiheit/beschwerdestelle">www.ffg.at/barrierefreiheit/beschwerdestelle
           </a>.
         </div>
       </div>

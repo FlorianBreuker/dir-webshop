@@ -28,38 +28,55 @@
       Univerisät nach Wien gezogen sind.
     </p>
 
-    <h2 class="text-2xl font-bold mb-4">Unsere Markenidentität</h2>
-    <p class="mb-6 leading-relaxed">
-      Die Marke <b>PhotoLoom</b> steht für die Verbindung von Technik und Handwerk.
-      Der "Loom" (Webstuhl) soll dabei dem Handwerk einen besonderen Wert zuweisen.
-      Unsere Marke ist gemäß des Nizza-Abkommens den Klasse 42 (SaaS - Software as a Service) und Klasse 9 (Computersoftware) zugehörigig.
-    </p>
+    <div class="grid justify-center">
+      <div class="flex justify-center">
+        <video class="mb-3 justify-center" width="500" controls>
+          <source src="/welcome.mp4" type="video/mp4">
+          Your browser does not support HTML video.
+        </video>
+      </div>
 
-    <h2 class="text-2xl font-bold mb-4">Bildmarke</h2>
-    <img class="w-20 h-auto mb-3" src="/favicon.svg" alt="PhotoLoom Bildmarke" />
-    <p class="mb-8">Eine Mischung aus der Blende einer Kamera und einem Wollknäuel, geformt aus 18 Ellipsen.
-    </p>
+      <img class="mb-3" src="https://images.unsplash.com/vector-1761241991383-c439145cd229"
+           alt="Studio Vector" />
+    </div>
 
-    <h2 class="text-2xl font-bold mb-4">Wortbildmarke</h2>
-    <img class="w-64 h-auto mb-3" src="/wortbildmarke.png" alt="PhotoLoom Wortbildmarke" />
-    <p class="mb-8">
-      Die Wortbildmarke ergibt sich durch ein Zusammenspiel von Wort- und Bildmarke.
-    </p>
+    <div class="marke">
+      <h2 class="text-2xl font-bold mb-4">Unsere Markenidentität</h2>
+      <p class="mb-6 leading-relaxed">
+        Die Marke <b>PhotoLoom</b> steht für die Verbindung von Technik und Handwerk.
+        Der "Loom" (Webstuhl) soll dabei dem Handwerk einen besonderen Wert zuweisen.
+        Unsere Marke ist gemäß des Nizza-Abkommens den Klasse 42 (SaaS - Software as a Service) und Klasse 9
+        (Computersoftware) zugehörigig.
+      </p>
+
+      <h2 class="text-2xl font-bold mb-4">Bildmarke</h2>
+      <img class="w-20 h-auto mb-3" src="/favicon.svg" alt="PhotoLoom Bildmarke" />
+      <p class="mb-8">Eine Mischung aus der Blende einer Kamera und einem Wollknäuel, geformt aus 18 Ellipsen.
+      </p>
+
+      <h2 class="text-2xl font-bold mb-4">Wortbildmarke</h2>
+      <img class="w-64 h-auto mb-3" src="/wortbildmarke.png" alt="PhotoLoom Wortbildmarke" />
+      <p class="mb-8">
+        Die Wortbildmarke ergibt sich durch ein Zusammenspiel von Wort- und Bildmarke.
+      </p>
 
 
-    <h2 class="text-2xl font-bold mb-4">Mustermarke</h2>
-    <img class="w-45 h-auto mb-3" src="/mustermarke.svg" alt="PhotoLoom Mustermarke" />
-    <p class="mb-8">Ein Muster zusammengesetzt aus versetzten Bildmarken, welches zur Wiedererkennung in unserem Produkt
-      verwendet wird.</p>
+      <h2 class="text-2xl font-bold mb-4">Mustermarke</h2>
+      <img class="w-45 h-auto mb-3" src="/mustermarke.svg" alt="PhotoLoom Mustermarke" />
+      <p class="mb-8">Ein Muster zusammengesetzt aus versetzten Bildmarken, welches zur Wiedererkennung in unserem
+        Produkt
+        verwendet wird.</p>
+    </div>
+
   </div>
 </div>
 
 <style>
-    img {
+    .marke img {
         transition: transform 0.3s ease;
     }
 
-    img:hover {
+    .marke img:hover {
         transform: scale(1.1);
     }
 </style>

@@ -7,6 +7,12 @@
   }
 
   let { children }: Props = $props()
+
+  let cookie = $state(true);
+
+  const disableCookie = () => {
+    cookie = false
+  }
 </script>
 
 <div class="flex flex-col min-h-screen">
@@ -30,19 +36,21 @@
     {@render children?.()}
   </main>
 
-  <div class="fixed bottom-4 right-4 z-50">
-    <div class="card w-96 bg-base-100 card-md shadow-sm border border-base-200">
-      <div class="card-body">
-        <h2 class="card-title">Cookies</h2>
-        <p>Wir verwenden Cookies auf unserer Website um unsere Website stätig zu verbessern. Hier geht es zur <a
-          href="/privacy" class="link">Datenschutzerklärung</a>.</p>
-        <div class="justify-end card-actions">
-          <button class="btn">Ablehnen</button>
-          <button class="btn btn-primary">Akzeptieren</button>
+  {#if cookie}
+    <div class="fixed bottom-4 right-4 z-50">
+      <div class="card w-96 bg-base-100 card-md shadow-sm border border-base-200">
+        <div class="card-body">
+          <h2 class="card-title">Cookies</h2>
+          <p>Wir verwenden Cookies auf unserer Website um unsere Website stätig zu verbessern. Hier geht es zur <a
+            href="/privacy" class="link">Datenschutzerklärung</a>.</p>
+          <div class="justify-end card-actions">
+            <button onclick={disableCookie} class="btn">Ablehnen</button>
+            <button onclick={disableCookie} class="btn btn-primary">Akzeptieren</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  {/if}
 
   <div class="border-t max-w-[1000px] mx-auto w-full"></div>
 
